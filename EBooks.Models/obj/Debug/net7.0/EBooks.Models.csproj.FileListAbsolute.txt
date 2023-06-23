@@ -1,0 +1,12 @@
+C:\Users\Granit's PC\Desktop\Programming\C#\WebApplication1\EBooks.Models\bin\Debug\net7.0\EBooks.Models.deps.json
+C:\Users\Granit's PC\Desktop\Programming\C#\WebApplication1\EBooks.Models\bin\Debug\net7.0\EBooks.Models.dll
+C:\Users\Granit's PC\Desktop\Programming\C#\WebApplication1\EBooks.Models\bin\Debug\net7.0\EBooks.Models.pdb
+C:\Users\Granit's PC\Desktop\Programming\C#\WebApplication1\EBooks.Models\obj\Debug\net7.0\EBooks.Models.csproj.AssemblyReference.cache
+C:\Users\Granit's PC\Desktop\Programming\C#\WebApplication1\EBooks.Models\obj\Debug\net7.0\EBooks.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Granit's PC\Desktop\Programming\C#\WebApplication1\EBooks.Models\obj\Debug\net7.0\EBooks.Models.AssemblyInfoInputs.cache
+C:\Users\Granit's PC\Desktop\Programming\C#\WebApplication1\EBooks.Models\obj\Debug\net7.0\EBooks.Models.AssemblyInfo.cs
+C:\Users\Granit's PC\Desktop\Programming\C#\WebApplication1\EBooks.Models\obj\Debug\net7.0\EBooks.Models.csproj.CoreCompileInputs.cache
+C:\Users\Granit's PC\Desktop\Programming\C#\WebApplication1\EBooks.Models\obj\Debug\net7.0\EBooks.Models.dll
+C:\Users\Granit's PC\Desktop\Programming\C#\WebApplication1\EBooks.Models\obj\Debug\net7.0\refint\EBooks.Models.dll
+C:\Users\Granit's PC\Desktop\Programming\C#\WebApplication1\EBooks.Models\obj\Debug\net7.0\EBooks.Models.pdb
+C:\Users\Granit's PC\Desktop\Programming\C#\WebApplication1\EBooks.Models\obj\Debug\net7.0\ref\EBooks.Models.dll

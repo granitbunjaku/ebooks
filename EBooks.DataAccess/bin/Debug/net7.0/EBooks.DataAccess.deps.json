@@ -11,6 +11,7 @@
           "EBooks.Models": "1.0.0",
           "EBooks.Utility": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.4",
+          "Microsoft.EntityFrameworkCore.Design": "7.0.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.4",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.4"
         },

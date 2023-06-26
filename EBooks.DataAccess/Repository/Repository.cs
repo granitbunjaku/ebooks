@@ -14,7 +14,6 @@ public class Repository<T> : IRepository<T> where T : class
     {
         this._db = db;
         this.dbSet = _db.Set<T>();
-        this._db.Products.Include(p => p.Category);
     }
 
     public IEnumerable<T> GetAll(string? includeProperties = null)
@@ -38,7 +37,7 @@ public class Repository<T> : IRepository<T> where T : class
         {
             foreach (var includeProp in includeProperties.Split(new char[] {','}, StringSplitOptions.RemoveEmptyEntries))
             {
-                query.Include(includeProp);
+                query = query.Include(includeProp);
             }
         }
         return query.FirstOrDefault();

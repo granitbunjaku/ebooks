@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.UI.Services;
 
-namespace EBooks.Models;
+namespace EBooks.Utility;
 
 public class EmailSender : IEmailSender
 {

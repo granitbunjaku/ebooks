@@ -1,4 +1,5 @@
-﻿using EBooks.DataAccess.Repository.IRepository;
+﻿using System.Security.Claims;
+using EBooks.DataAccess.Repository.IRepository;
 using EBooks.Models;
 using EBooks.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
@@ -87,6 +88,8 @@ public class ProductController : Controller
                 productVM.Product.ImageUrl = @"\images\product\" + fileName;
             }
 
+            productVM.Product.PublisherId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
             if (productVM.Product.Id == 0)
             {
                 _unitOfWork.Product.Add(productVM.Product);
@@ -145,7 +148,7 @@ public class ProductController : Controller
     [HttpGet]
     public IActionResult GetAll()
     {
-        List<Product> products = _unitOfWork.Product.GetAll(includeProperties: "Category").ToList();
+        List<Product> products = _unitOfWork.Product.GetAll(includeProperties: "Category").Where(p => p.PublisherId == User.FindFirstValue(ClaimTypes.NameIdentifier)).ToList();
         return Json(new { data = products });
     }
     

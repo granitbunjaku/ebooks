@@ -39,4 +39,10 @@ public class Product
 
     [ValidateNever]
     public string ImageUrl { get; set; }
+    
+    [ValidateNever]
+    
+    public string PublisherId { get; set; }
+    [ValidateNever]
+    public ApplicationUser Publisher { get; set; }
 }

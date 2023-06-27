@@ -26,7 +26,8 @@ public class ApplicationDbContext : IdentityDbContext<IdentityUser>
             new Category {Id=2, Name="SciFi", DisplayOrder = 2},
             new Category {Id=3, Name="History", DisplayOrder = 3}
         );
-
+        
+        /*
         modelBuilder.Entity<Product>().HasData(
                 new Product
                 {
@@ -113,5 +114,6 @@ public class ApplicationDbContext : IdentityDbContext<IdentityUser>
                     ImageUrl = ""
                 }
         );
+        */
     }
 }

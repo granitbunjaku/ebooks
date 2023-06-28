@@ -16,4 +16,5 @@ public class ApplicationUser : IdentityUser
     public string? PostalCode { get; set; }
 
     [ValidateNever] public Collection<Product> Products { get; set; }
+    [ValidateNever] public Cart? Cart { get; set; }
 }

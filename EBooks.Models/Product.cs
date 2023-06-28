@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
@@ -45,4 +46,5 @@ public class Product
     public string PublisherId { get; set; }
     [ValidateNever]
     public ApplicationUser Publisher { get; set; }
+    public int Quantity { get; set; }
 }

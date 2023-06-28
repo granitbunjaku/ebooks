@@ -16,9 +16,25 @@ public class ApplicationDbContext : IdentityDbContext<IdentityUser>
     public DbSet<Product> Products { get; set; }
 
     public DbSet<ApplicationUser> ApplicationUsers{ get; set; }
+    
+    public DbSet<Cart> Cart { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<CartProduct>()
+            .HasKey(cp => new { cp.CartId, cp.ProductId });
+        
+        modelBuilder.Entity<CartProduct>()
+            .HasOne(cp => cp.Cart)
+            .WithMany(c => c.CartProducts)
+            .HasForeignKey(cp => cp.CartId);
+        
+        // modelBuilder.Entity<CartProduct>()
+        //     .HasOne(cp => cp.Product)
+        //     .WithMany(p => p.CartProducts)
+        //     .HasForeignKey(cp => cp.ProductId)
+        //     .OnDelete(DeleteBehavior.Restrict);
+
         base.OnModelCreating(modelBuilder);
         
         modelBuilder.Entity<Category>().HasData(
